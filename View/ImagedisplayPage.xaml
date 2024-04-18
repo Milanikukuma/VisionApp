@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PicSight.View.ImagedisplayPage"
+             Title="ImagedisplayPage"
+              BackgroundImageSource="mizozo.png">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+
+        <!-- Button to capture photo -->
+        <Button Text="Take Photo" Clicked="TakePhotoButton_ClickedAsync" HorizontalOptions="Center" Margin="0,20,0,0" />
+
+        <!-- Label to display analysis result -->
+        <Label x:Name="AnalysisResultLabel" Text="Analysis Result:" FontSize="Large" HorizontalOptions="Center" Margin="0,20,0,0" />
+
+        <!-- Description of the image -->
+        <Label x:Name="ImageDescriptionLabel" FontSize="Medium" HorizontalOptions="Center" Margin="0,10,0,0" />
+
+    </StackLayout>
+</ContentPage>
